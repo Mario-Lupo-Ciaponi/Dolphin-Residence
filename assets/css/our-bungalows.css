@@ -2,6 +2,7 @@
   --gray-color: #616161;
   --orange-color: #ff8d41;
   --bg-color: #eeeeee;
+  --dark-gray-color: #757575;
 }
 
 .our-bungalows-section {
@@ -29,8 +30,9 @@
   color: var(--orange-color);
 }
 
-.our-bungalows-section .section-header .bungalows {
+.our-bungalows-section .bungalows {
   display: flex;
+  gap: 3rem;
   flex-direction: column;
 }
 
@@ -38,4 +40,24 @@
   width: 100%;
   max-width: 23.75rem;
   margin: 0 auto;
+  background-color: white;
+}
+
+.our-bungalows-section .bungalows .bungalow-card .card-content {
+  padding: 1.5rem 1rem;
+}
+
+.our-bungalows-section .bungalows .bungalow-card .card-title,
+.our-bungalows-section .bungalows .bungalow-card .price {
+  text-align: center;
+}
+
+.our-bungalows-section .bungalows .bungalow-card .card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.our-bungalows-section .bungalows .bungalow-card .price {
+  color: var(--dark-gray-color);
+  font-size: 0.9rem;
 }
