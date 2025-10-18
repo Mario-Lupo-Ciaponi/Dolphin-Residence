@@ -1,33 +1,13 @@
 :root {
   --gray-color: #616161;
-  --orange-color: #ff8d41;
   --bg-color: #eeeeee;
   --dark-gray-color: #757575;
+  --light-gray: #eeeeee;
 }
 
 .our-bungalows-section {
   padding: 3.75rem 1.25rem;
   background-color: var(--bg-color);
-}
-
-.our-bungalows-section .section-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.our-bungalows-section .section-header .main-heading {
-  font-size: 1rem;
-  color: var(--gray-color);
-  margin-bottom: 1.5rem;
-}
-
-.our-bungalows-section .section-header .secondary-heading {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.our-bungalows-section .section-header .secondary-heading .special-word {
-  color: var(--orange-color);
 }
 
 .our-bungalows-section .bungalows {
@@ -41,6 +21,7 @@
   max-width: 23.75rem;
   margin: 0 auto;
   background-color: white;
+  border: 1px solid var(--light-gray);
 }
 
 .our-bungalows-section .bungalows .bungalow-card .card-content {
