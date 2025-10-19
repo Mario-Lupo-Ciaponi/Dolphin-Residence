@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1500px;
 }
 
 .header .navbar .logo {
@@ -51,8 +52,45 @@
 
 .header .welcoming-container .secondary-title {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #d9d9d9;
   font-weight: bolder;
   letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 880px) {
+  .header {
+    padding: 3.125rem 5rem;
+  }
+
+  .header .navbar .links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .header .navbar .links .item {
+    list-style: none;
+  }
+
+  .header .navbar .links .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header .navbar .menu-button {
+    display: none;
+  }
+
+  .header .welcoming-container .main-part .welcome-to {
+    font-size: 1.125rem;
+  }
+
+  .header .welcoming-container .main-part .title-heading {
+    font-size: 4rem;
+  }
+
+  .header .welcoming-container .secondary-title {
+    font-size: 1rem;
+  }
 }
