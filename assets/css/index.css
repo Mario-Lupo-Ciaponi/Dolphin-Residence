@@ -28,3 +28,9 @@ html {
 .section-header .secondary-heading .special-word {
   color: var(--orange-color);
 }
+
+@media screen and (min-width: 1300px) {
+  .section-header .secondary-heading {
+    font-size: 2.25rem;
+  }
+}

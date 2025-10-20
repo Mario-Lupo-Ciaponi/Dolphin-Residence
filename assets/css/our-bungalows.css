@@ -14,6 +14,8 @@
   display: flex;
   gap: 3rem;
   flex-direction: column;
+  max-width: 1438px;
+  margin: 0 auto;
 }
 
 .our-bungalows-section .bungalows .bungalow-card {
@@ -41,4 +43,19 @@
 .our-bungalows-section .bungalows .bungalow-card .price {
   color: var(--dark-gray-color);
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1300px) {
+  .our-bungalows-section {
+    padding: 6.25rem 9.75rem;
+  }
+
+  .our-bungalows-section .bungalows {
+    gap: 3rem;
+    flex-direction: row;
+  }
+
+  .our-bungalows-section .bungalows .bungalow-card {
+    width: 33%;
+  }
 }
