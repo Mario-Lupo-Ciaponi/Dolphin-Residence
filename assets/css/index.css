@@ -30,6 +30,10 @@ html {
 }
 
 @media screen and (min-width: 1300px) {
+  .section-header {
+    text-align: center;
+    margin-bottom: 6.25rem;
+  }
   .section-header .secondary-heading {
     font-size: 2.25rem;
   }

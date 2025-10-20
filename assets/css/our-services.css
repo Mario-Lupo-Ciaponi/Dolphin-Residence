@@ -20,11 +20,16 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  margin: 0 auto;
+  max-width: 1531px;
 }
 
 .our-services-section .services .service-card {
   padding: 4rem 2rem;
   border: 1px solid var(--lighter-gray-color);
+  width: 100%;
+  max-width: 427px;
+  margin: 0 auto;
 }
 
 .our-services-section .services .service-card .icon-div {
@@ -49,4 +54,17 @@
 .our-services-section .services .service-card .card-info {
   font-size: 0.75rem;
   text-align: center;
+}
+
+@media screen and (min-width: 1074px) {
+  .our-services-section {
+    padding: 6.25rem 9.75rem;
+  }
+  .our-services-section .services {
+    display: flex;
+    flex-direction: row;
+  }
+  .our-services-section .services .service-card {
+    width: 33%;
+  }
 }
