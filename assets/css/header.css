@@ -14,10 +14,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  width: 100%;
 }
 
 .header .navbar .logo {
+  flex: 0;
   width: 5rem;
 }
 
@@ -63,10 +64,14 @@
     padding: 3.125rem 5rem;
   }
 
+  .header .navbar {
+    justify-content: center;
+    gap: 10rem;
+  }
+
   .header .navbar .links {
     display: flex;
     gap: 1.5rem;
-    align-items: center;
   }
 
   .header .navbar .links .item {
