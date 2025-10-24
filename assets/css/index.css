@@ -2,11 +2,12 @@
 
 :root {
   --orange-color: #ff8d41;
+  --black-color: #424242;
 }
 
 html {
   font-family: "Montserrat";
-  color: #424242;
+  color: var(--black-color);
 }
 
 .section-header {

@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --light-orange-color: #fdf5e8;
+  --orange-color: #f59c06;
+}
+
+html {
+  font-family: "Montserrat";
+}
+
 .bungalow-info {
   margin-top: 3rem;
   padding: 0 2rem;
@@ -35,4 +46,48 @@
   margin-top: 2rem;
   font-weight: 600;
   font-size: 1.3rem;
+}
+
+.bungalow-info .services-and-amenities .title {
+  margin-bottom: 1.25rem;
+}
+
+.bungalow-info .list-of-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.8rem 1.25rem;
+  list-style-type: none;
+  background-color: var(--light-orange-color);
+  max-width: 1086px;
+}
+
+.bungalow-info .list-of-services .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bungalow-info .list-of-services .list-item .icon {
+  color: var(--orange-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.bungalow-info .list-of-services .list-item .item-text {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 715px) {
+  .bungalow-info .list-of-services {
+    flex-direction: row;
+  }
+
+  .bungalow-info .list-of-services .list-item {
+    width: 48%;
+    flex-grow: 1;
+  }
 }
