@@ -27,31 +27,36 @@
   border: none;
 }
 
+.header .navbar .item {
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.header .navbar .item:hover {
+  color: rgba(185, 183, 183, 0.765);
+}
+
 .header .navbar .menu-button .icon {
   color: white;
   font-size: 1.5rem;
 }
 
-.header .navbar .links {
-  display: none;
-}
-
-.header .welcoming-container {
+.header #welcoming-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.header .welcoming-container .main-part .welcome-to {
+.header #welcoming-container .main-part .welcome-to {
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
 }
 
-.header .welcoming-container .main-part .title-heading {
+.header #welcoming-container .main-part .title-heading {
   font-size: 2rem;
 }
 
-.header .welcoming-container .secondary-title {
+.header #welcoming-container .secondary-title {
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
   color: #d9d9d9;
@@ -94,15 +99,15 @@
     display: none;
   }
 
-  .header .welcoming-container .main-part .welcome-to {
+  .header #welcoming-container .main-part .welcome-to {
     font-size: 1.125rem;
   }
 
-  .header .welcoming-container .main-part .title-heading {
+  .header #welcoming-container .main-part .title-heading {
     font-size: 4rem;
   }
 
-  .header .welcoming-container .secondary-title {
+  .header #welcoming-container .secondary-title {
     font-size: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-.about-us-section {
+#about-us-section {
   padding: 3.75rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -7,12 +7,12 @@
   gap: 3.75rem;
 }
 
-.about-us-section .about-us-heading {
+#about-us-section .about-us-heading {
   font-size: 1rem;
   color: #616161;
 }
 
-.about-us-section .about-card .card-image {
+#about-us-section .about-card .card-image {
   padding: 0.75rem;
   margin: 2.45px auto 2.5rem auto;
   border: 1px solid black;
@@ -22,38 +22,38 @@
   height: 16rem;
 }
 
-.about-us-section .about-card .card-title {
+#about-us-section .about-card .card-title {
   font-size: 1.8rem;
   margin-bottom: 1.45rem;
 }
 
-.about-us-section .about-card .card-primary-info,
-.about-us-section .about-card .card-secondary-info {
+#about-us-section .about-card .card-primary-info,
+#about-us-section .about-card .card-secondary-info {
   font-size: 1rem;
 }
 
-.about-us-section .about-card .card-secondary-info {
+#about-us-section .about-card .card-secondary-info {
   margin-top: 0.75rem;
   color: #787878;
 }
 
 @media screen and (min-width: 970px) {
-  .about-us-section {
+  #about-us-section {
     padding: 6.25rem 8rem;
     gap: 6.25rem;
   }
 
-  .about-us-section .about-card {
+  #about-us-section .about-card {
     display: flex;
     align-items: center;
     gap: 7rem;
   }
 
-  .about-us-section .about-card .card-image {
+  #about-us-section .about-card .card-image {
     margin: 0;
   }
 
-  .about-us-section .about-card .card-image.right {
+  #about-us-section .about-card .card-image.right {
     order: 1;
   }
 }

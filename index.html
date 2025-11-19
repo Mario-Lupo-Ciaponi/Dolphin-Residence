@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/our-bungalows.css" />
     <link rel="stylesheet" href="assets/css/our-services.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/back-to-top-btn.css" />
+    <script src="assets/js/scroll-to-section.js" defer></script>
+    <script src="assets/js/go-back-to-top.js" defer></script>
+    <script src="assets/js/toggle-class-on-scroll.js" defer></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
@@ -27,11 +31,11 @@
         <img class="logo" src="assets/images/logo.png" alt="logo" />
 
         <ul class="links">
-          <li class="item"><a href="#" class="link">Начало</a></li>
-          <li class="item"><a href="#" class="link">За нас</a></li>
-          <li class="item"><a href="#" class="link">Бунгала</a></li>
-          <li class="item"><a href="#" class="link">Услуги</a></li>
-          <li class="item"><a href="#" class="link">Контакти</a></li>
+          <li class="item">Начало</li>
+          <li data-target="about-us-section" class="item">За нас</li>
+          <li data-target="our-bungalows-section" class="item">Бунгала</li>
+          <li data-target="our-services-section" class="item">Услуги</li>
+          <li data-target="footer" class="item">Контакти</li>
         </ul>
 
         <button class="menu-button">
@@ -39,7 +43,7 @@
         </button>
       </nav>
 
-      <div class="welcoming-container">
+      <div id="welcoming-container">
         <div class="main-part">
           <p class="welcome-to">Добре дошли в,</p>
           <h1 class="title-heading">DOLPHIN RESIDENCE</h1>
@@ -53,7 +57,7 @@
 
     <main>
       <!-- About Us -->
-      <section class="about-us-section">
+      <section id="about-us-section">
         <h2 class="about-us-heading">За нас</h2>
 
         <article class="about-card">
@@ -131,7 +135,7 @@
       </section>
 
       <!-- Оur bungalows -->
-      <section class="our-bungalows-section">
+      <section id="our-bungalows-section">
         <div class="section-header">
           <h2 class="main-heading">Нашите Бунгала</h2>
           <h3 class="secondary-heading">
@@ -173,7 +177,7 @@
       </section>
 
       <!-- Our services -->
-      <section class="our-services-section">
+      <section id="our-services-section">
         <div class="section-header">
           <h2 class="main-heading">Нашите услуги</h2>
           <h3 class="secondary-heading">
@@ -210,7 +214,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer">
       <div class="all-rights-reserved-container">
         <img class="footer-logo" src="./assets/images/logo.png" alt="лого" />
 
@@ -244,5 +248,9 @@
         </div>
       </div>
     </footer>
+
+    <button id="back-to-top-btn" onclick="goBackToTop()">
+      <i class="fas fa-arrow-up icon"></i>
+    </button>
   </body>
 </html>

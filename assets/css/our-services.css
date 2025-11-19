@@ -5,18 +5,18 @@
   --lighter-gray-color: #eeeeee;
 }
 
-.our-services-section {
+#our-services-section {
   padding: 3.75rem 1.25rem;
 }
 
-.our-services-section .our-services-heading {
+#our-services-section .our-services-heading {
   font-size: 1rem;
   color: var(--gray-color);
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.our-services-section .services {
+#our-services-section .services {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -24,7 +24,7 @@
   max-width: 1531px;
 }
 
-.our-services-section .services .service-card {
+#our-services-section .services .service-card {
   padding: 4rem 2rem;
   border: 1px solid var(--lighter-gray-color);
   width: 100%;
@@ -32,39 +32,39 @@
   margin: 0 auto;
 }
 
-.our-services-section .services .service-card .icon-div {
+#our-services-section .services .service-card .icon-div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.our-services-section .services .service-card .icon {
+#our-services-section .services .service-card .icon {
   font-size: 2rem;
   color: var(--orange-color);
 }
 
-.our-services-section .services .service-card .card-title {
+#our-services-section .services .service-card .card-title {
   font-size: 1.25rem;
   color: var(--light-gray-color);
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.our-services-section .services .service-card .card-info {
+#our-services-section .services .service-card .card-info {
   font-size: 0.75rem;
   text-align: center;
 }
 
 @media screen and (min-width: 1074px) {
-  .our-services-section {
+  #our-services-section {
     padding: 6.25rem 9.75rem;
   }
-  .our-services-section .services {
+  #our-services-section .services {
     display: flex;
     flex-direction: row;
   }
-  .our-services-section .services .service-card {
+  #our-services-section .services .service-card {
     width: 33%;
   }
 }

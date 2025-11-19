@@ -5,12 +5,12 @@
   --light-gray: #eeeeee;
 }
 
-.our-bungalows-section {
+#our-bungalows-section {
   padding: 3.75rem 1.25rem;
   background-color: var(--bg-color);
 }
 
-.our-bungalows-section .bungalows {
+#our-bungalows-section .bungalows {
   display: flex;
   gap: 3rem;
   flex-direction: column;
@@ -18,7 +18,7 @@
   margin: 0 auto;
 }
 
-.our-bungalows-section .bungalows .bungalow-card {
+#our-bungalows-section .bungalows .bungalow-card {
   width: 100%;
   max-width: 23.75rem;
   margin: 0 auto;
@@ -26,36 +26,36 @@
   border: 1px solid var(--light-gray);
 }
 
-.our-bungalows-section .bungalows .bungalow-card .card-content {
+#our-bungalows-section .bungalows .bungalow-card .card-content {
   padding: 1.5rem 1rem;
 }
 
-.our-bungalows-section .bungalows .bungalow-card .card-title,
-.our-bungalows-section .bungalows .bungalow-card .price {
+#our-bungalows-section .bungalows .bungalow-card .card-title,
+#our-bungalows-section .bungalows .bungalow-card .price {
   text-align: center;
 }
 
-.our-bungalows-section .bungalows .bungalow-card .card-title {
+#our-bungalows-section .bungalows .bungalow-card .card-title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.our-bungalows-section .bungalows .bungalow-card .price {
+#our-bungalows-section .bungalows .bungalow-card .price {
   color: var(--dark-gray-color);
   font-size: 0.9rem;
 }
 
 @media screen and (min-width: 1300px) {
-  .our-bungalows-section {
+  #our-bungalows-section {
     padding: 6.25rem 9.75rem;
   }
 
-  .our-bungalows-section .bungalows {
+  #our-bungalows-section .bungalows {
     gap: 3rem;
     flex-direction: row;
   }
 
-  .our-bungalows-section .bungalows .bungalow-card {
+  #our-bungalows-section .bungalows .bungalow-card {
     width: 33%;
   }
 }

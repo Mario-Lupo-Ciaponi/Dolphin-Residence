@@ -4,7 +4,7 @@
   --darker-color: #424242;
 }
 
-.footer {
+#footer {
   padding: 3.75rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -13,45 +13,45 @@
   margin: 0 auto;
 }
 
-.footer .all-rights-reserved-container {
+#footer .all-rights-reserved-container {
   width: 80%;
 }
 
-.footer .all-rights-reserved-container .footer-logo {
+#footer .all-rights-reserved-container .footer-logo {
   width: 30%;
   max-width: 110px;
   height: auto;
   margin-bottom: 1.5rem;
 }
 
-.footer .all-rights-reserved-container .all-rights-reserved-p {
+#footer .all-rights-reserved-container .all-rights-reserved-p {
   margin-bottom: 1rem;
 }
 
-.footer .all-rights-reserved-container .all-rights-reserved-p,
-.footer .all-rights-reserved-container .email-address {
+#footer .all-rights-reserved-container .all-rights-reserved-p,
+#footer .all-rights-reserved-container .email-address {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--gray-color);
 }
 
-.footer .quick-links {
+#footer .quick-links {
   display: flex;
   flex-wrap: wrap;
   gap: 2.9rem;
 }
 
-.footer .quick-links .footer-column {
+#footer .quick-links .footer-column {
   flex-grow: 1;
 }
 
-.footer .quick-links .footer-column .column-heading {
+#footer .quick-links .footer-column .column-heading {
   font-size: 1rem;
   color: var(--darker-color);
   margin-bottom: 1.5rem;
 }
 
-.footer .quick-links .footer-column .footer-links {
+#footer .quick-links .footer-column .footer-links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -59,31 +59,31 @@
   padding: 0;
 }
 
-.footer .quick-links .footer-column .footer-links .item {
+#footer .quick-links .footer-column .footer-links .item {
   font-size: 0.9rem;
 }
 
-.footer .quick-links .footer-column .footer-links .item-link {
+#footer .quick-links .footer-column .footer-links .item-link {
   text-decoration: none;
   color: var(--gray-color);
   transition: all 400ms ease-in-out;
 }
 
-.footer .quick-links .footer-column .footer-links .item-link:hover {
+#footer .quick-links .footer-column .footer-links .item-link:hover {
   color: var(--dark-gray-color);
 }
 
 @media screen and (min-width: 885px) {
-  .footer {
+  #footer {
     padding: 6.25rem 5rem;
     flex-direction: row;
     justify-content: space-between;
     gap: auto;
   }
-  .footer .all-rights-reserved-container {
+  #footer .all-rights-reserved-container {
     width: 40%;
   }
-  .footer .quick-links {
+  #footer .quick-links {
     width: 50%;
     flex-direction: row;
 
