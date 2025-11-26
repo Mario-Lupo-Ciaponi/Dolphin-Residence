@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/bungalow.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
-
+    <link rel="stylesheet" href="assets/css/bungalow.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/back-to-top-btn.css" />
+    <script src="assets/js/scroll-to-section.js" defer></script>
+    <script src="assets/js/go-back-to-top.js" defer></script>
+    <script src="assets/js/toggle-class-on-scroll.js" defer></script>
+    <script src="assets/js/change-bungalow-image.js" defer></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
@@ -17,6 +21,7 @@
       href="assets/images/favicon.png"
       type="image/x-icon"
     />
+
     <title>Dolphin Residence</title>
   </head>
   <body>
@@ -50,118 +55,136 @@
     </header>
 
     <main>
-      <section id="bungalow-info">
-        <header class="bungalow-header">
-          <h2 class="title">Бунгало 1 - Papaver I</h2>
+      <div class="wrapper">
+        <section id="bungalow-info">
+          <header class="bungalow-header">
+            <h2 class="title">Бунгало 1 - Papaver I</h2>
 
-          <div class="bungalow-basic-info">
-            <ul class="list_of_info">
-              <li class="item">
-                <i class="fas fa-user-friends icon"></i>
-                4
+            <div class="bungalow-basic-info">
+              <ul class="list_of_info">
+                <li class="item">
+                  <i class="fas fa-user-friends icon"></i>
+                  4
+                </li>
+                <li class="item">
+                  <i class="fas fa-bed icon"></i>
+                  3
+                </li>
+                <li class="item">
+                  <i class="fas fa-bath icon"></i>
+                  3
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <div class="main-info">
+            <p class="paragraph-info">
+              Бунгалото е напълно оборудвано и предлага всички удобства за
+              комфортен престой. Подходящо е както за кратка, така и за по-дълга
+              почивка.
+            </p>
+
+            <p class="paragraph-info">
+              Спалня с легла и гардероб. В някои варианти — диван, който се
+              преобразува в две легла, гардероби, Маси с 4 стола Шкафове за
+              съхранение и таван с легла (спално място на горно ниво).
+            </p>
+
+            <p class="paragraph-info">
+              Индукционни котлони, кафе машина, хладилник (зареден с напитки,
+              които се заплащат отделно), посуда и прибори за хранене
+            </p>
+
+            <p class="paragraph-info">
+              Самостоятелна баня с тоалетна с наличие на всички основни
+              санитарни удобства.
+            </p>
+
+            <p class="paragraph-info">
+              Климатик с дистанционно управление (осигурява отопление и
+              охлаждане), нощна светлина, печка, кафе машина, горен прозорец,
+              който осигурява повече естествена светлина, топло и уютно
+              пространство през всички сезони.
+            </p>
+
+            <p class="paragraph-info important">Животните са позовлени.</p>
+          </div>
+
+          <div class="services-and-amenities">
+            <h3 class="title">Услуги и удобства</h3>
+
+            <ul class="list-of-services">
+              <li class="list-item">
+                <i class="fas fa-home icon"></i>
+                <span class="item-text"
+                  >Самостоятелно и напълно оборудвано бунгало</span
+                >
               </li>
-              <li class="item">
+              <li class="list-item">
                 <i class="fas fa-bed icon"></i>
-                3
+                <span class="item-text">Спалня с удобни легла</span>
               </li>
-              <li class="item">
+              <li class="list-item">
+                <i class="fas fa-couch icon"></i>
+                <span class="item-text"
+                  >Диван, който се преобразува в допълнителни легла</span
+                >
+              </li>
+              <li class="list-item">
+                <i class="fas fa-utensils icon"></i>
+                <span class="item-text">Напълно оборудвана кухня</span>
+              </li>
+              <li class="list-item">
                 <i class="fas fa-bath icon"></i>
-                3
+                <span class="item-text">Самостоятелна баня и тоалетна</span>
+              </li>
+              <li class="list-item">
+                <i class="fas fa-thermometer-half icon"></i>
+                <span class="item-text">Климатик с отопление и охлаждане</span>
+              </li>
+              <li class="list-item">
+                <i class="fas fa-fire-alt icon"></i>
+                <span class="item-text"
+                  >Печка за комфорт през студените месеци</span
+                >
+              </li>
+              <li class="list-item">
+                <i class="fas fa-lightbulb icon"></i>
+                <span class="item-text"
+                  >естествено осветление от горен прозорец</span
+                >
+              </li>
+              <li class="list-item">
+                <i class="fas fa-wine-bottle icon"></i>
+                <span class="item-text">Хладилник с напитки</span>
+              </li>
+              <li class="list-item">
+                <i class="fas fa-users icon"></i>
+                <span class="item-text"
+                  >Подходящо за семейства и групи приятели</span
+                >
               </li>
             </ul>
           </div>
-        </header>
-
-        <div class="main-info">
-          <p class="paragraph-info">
-            Бунгалото е напълно оборудвано и предлага всички удобства за
-            комфортен престой. Подходящо е както за кратка, така и за по-дълга
-            почивка.
-          </p>
-
-          <p class="paragraph-info">
-            Спалня с легла и гардероб. В някои варианти — диван, който се
-            преобразува в две легла, гардероби, Маси с 4 стола Шкафове за
-            съхранение и таван с легла (спално място на горно ниво).
-          </p>
-
-          <p class="paragraph-info">
-            Индукционни котлони, кафе машина, хладилник (зареден с напитки,
-            които се заплащат отделно), посуда и прибори за хранене
-          </p>
-
-          <p class="paragraph-info">
-            Самостоятелна баня с тоалетна с наличие на всички основни санитарни
-            удобства.
-          </p>
-
-          <p class="paragraph-info">
-            Климатик с дистанционно управление (осигурява отопление и
-            охлаждане), нощна светлина, печка, кафе машина, горен прозорец,
-            който осигурява повече естествена светлина, топло и уютно
-            пространство през всички сезони.
-          </p>
-
-          <p class="paragraph-info important">Животните са позовлени.</p>
-        </div>
-
-        <div class="services-and-amenities">
-          <h3 class="title">Услуги и удобства</h3>
-
-          <ul class="list-of-services">
-            <li class="list-item">
-              <i class="fas fa-home icon"></i>
-              <span class="item-text"
-                >Самостоятелно и напълно оборудвано бунгало</span
-              >
-            </li>
-            <li class="list-item">
-              <i class="fas fa-bed icon"></i>
-              <span class="item-text">Спалня с удобни легла</span>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-couch icon"></i>
-              <span class="item-text"
-                >Диван, който се преобразува в допълнителни легла</span
-              >
-            </li>
-            <li class="list-item">
-              <i class="fas fa-utensils icon"></i>
-              <span class="item-text">Напълно оборудвана кухня</span>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-bath icon"></i>
-              <span class="item-text">Самостоятелна баня и тоалетна</span>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-thermometer-half icon"></i>
-              <span class="item-text">Климатик с отопление и охлаждане</span>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-fire-alt icon"></i>
-              <span class="item-text"
-                >Печка за комфорт през студените месеци</span
-              >
-            </li>
-            <li class="list-item">
-              <i class="fas fa-lightbulb icon"></i>
-              <span class="item-text"
-                >естествено осветление от горен прозорец</span
-              >
-            </li>
-            <li class="list-item">
-              <i class="fas fa-wine-bottle icon"></i>
-              <span class="item-text">Хладилник с напитки</span>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-users icon"></i>
-              <span class="item-text"
-                >Подходящо за семейства и групи приятели</span
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <article class="bungalow-images">
+          <img
+            id="1"
+            class="bungalow-image"
+            src="assets/images/bungalow-1-images/bungalow-1-cover.jpg"
+            alt="bungalow"
+          />
+          <div class="arrows">
+            <button class="arrow left">
+              <i class="fas fa-arrow-left icon"></i>
+            </button>
+            <button class="arrow right">
+              <i class="fas fa-arrow-right icon"></i>
+            </button>
+          </div>
+        </article>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -175,7 +198,7 @@
         <p class="email-address">dolphinresidense@gmail.com</p>
       </div>
 
-      <div class="quick-links">
+      <div id="quick-links">
         <div class="menu-link footer-column">
           <h3 class="column-heading">Бързи връски</h3>
 
@@ -199,5 +222,8 @@
         </div>
       </div>
     </footer>
+    <button id="back-to-top-btn">
+      <i class="fas fa-arrow-up icon"></i>
+    </button>
   </body>
 </html>

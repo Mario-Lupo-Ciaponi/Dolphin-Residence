@@ -14,6 +14,7 @@
     <script src="assets/js/scroll-to-section.js" defer></script>
     <script src="assets/js/go-back-to-top.js" defer></script>
     <script src="assets/js/toggle-class-on-scroll.js" defer></script>
+    <script src="assets/js/hamburger-menu-toggle.js" defer></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
@@ -38,8 +39,19 @@
           <li data-target="footer" class="item">Контакти</li>
         </ul>
 
+        <div class="off-screen-menu">
+          <ul class="links">
+            <li class="item">Начало</li>
+            <li data-target="about-us-section" class="item">За нас</li>
+            <li data-target="our-bungalows-section" class="item">Бунгала</li>
+            <li data-target="our-services-section" class="item">Услуги</li>
+            <li data-target="footer" class="item">Контакти</li>
+          </ul>
+        </div>
+
         <button class="menu-button">
-          <i class="fas fa-bars icon"></i>
+          <i class="fas fa-bars icon open"></i>
+          <i class="fas fa-times icon close"></i>
         </button>
       </nav>
 
@@ -146,7 +158,10 @@
         <div class="bungalows">
           <article class="bungalow-card first-bungalow">
             <a href="bungalow-1.html">
-              <img src="assets/images/bungalow-1-cover.jpg" alt="бунгало 1" />
+              <img
+                src="assets/images/bungalow-1-images/bungalow-1-cover.jpg"
+                alt="бунгало 1"
+              />
             </a>
 
             <div class="card-content">
@@ -249,7 +264,7 @@
       </div>
     </footer>
 
-    <button id="back-to-top-btn" onclick="goBackToTop()">
+    <button id="back-to-top-btn">
       <i class="fas fa-arrow-up icon"></i>
     </button>
   </body>

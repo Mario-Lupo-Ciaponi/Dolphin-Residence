@@ -9,18 +9,48 @@ html {
   font-family: "Montserrat";
 }
 
-.bungalow-info {
+.wrapper {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 0 2rem;
 }
 
-.bungalow-info .bungalow-header .title {
+.wrapper .bungalow-images {
+  order: 0;
+}
+
+.wrapper .bungalow-images .bungalow-image {
+  width: 100%;
+}
+
+.wrapper .bungalow-images .arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
+.wrapper .bungalow-images .arrows .arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#bungalow-info {
+  margin-top: 3rem;
+  order: 1;
+}
+
+#bungalow-info .bungalow-header .title {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
 }
 
-.bungalow-info .bungalow-header .list_of_info {
+#bungalow-info .bungalow-header .list_of_info {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -29,7 +59,7 @@ html {
   padding: 0;
 }
 
-.bungalow-info .main-info {
+#bungalow-info .main-info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -38,21 +68,21 @@ html {
   padding-bottom: 2rem;
 }
 
-.bungalow-info .main-info .important {
+#bungalow-info .main-info .important {
   font-weight: 600;
 }
 
-.bungalow-info .services-and-amenities {
+#bungalow-info .services-and-amenities {
   margin-top: 2rem;
   font-weight: 600;
   font-size: 1.3rem;
 }
 
-.bungalow-info .services-and-amenities .title {
+#bungalow-info .services-and-amenities .title {
   margin-bottom: 1.25rem;
 }
 
-.bungalow-info .list-of-services {
+#bungalow-info .list-of-services {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -63,13 +93,13 @@ html {
   max-width: 1086px;
 }
 
-.bungalow-info .list-of-services .list-item {
+#bungalow-info .list-of-services .list-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.bungalow-info .list-of-services .list-item .icon {
+#bungalow-info .list-of-services .list-item .icon {
   color: var(--orange-color);
   margin-right: 1rem;
   font-size: 1.2rem;
@@ -77,16 +107,16 @@ html {
   text-align: center;
 }
 
-.bungalow-info .list-of-services .list-item .item-text {
+#bungalow-info .list-of-services .list-item .item-text {
   font-size: 1rem;
 }
 
 @media screen and (min-width: 715px) {
-  .bungalow-info .list-of-services {
+  #bungalow-info .list-of-services {
     flex-direction: row;
   }
 
-  .bungalow-info .list-of-services .list-item {
+  #bungalow-info .list-of-services .list-item {
     width: 48%;
     flex-grow: 1;
   }
