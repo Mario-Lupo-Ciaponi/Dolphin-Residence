@@ -15,6 +15,7 @@
     <script src="assets/js/go-back-to-top.js" defer></script>
     <script src="assets/js/toggle-class-on-scroll.js" defer></script>
     <script src="assets/js/hamburger-menu-toggle.js" defer></script>
+    <script src="assets/js/scroll-to-section-footer.js" defer></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
@@ -27,7 +28,7 @@
     <title>Dolphin Residence</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="navbar">
         <img class="logo" src="assets/images/logo.png" alt="logo" />
 
@@ -244,11 +245,11 @@
           <h3 class="column-heading">Бързи връски</h3>
 
           <ul class="footer-links">
-            <li class="item"><a href="#" class="item-link">Начало</a></li>
-            <li class="item"><a href="#" class="item-link">За нас</a></li>
-            <li class="item"><a href="#" class="item-link">Бунгала</a></li>
-            <li class="item"><a href="#" class="item-link">Услуги</a></li>
-            <li class="item"><a href="#" class="item-link">Контакти</a></li>
+            <li data-target="home" class="item">Начало</li>
+            <li data-target="about-us-section" class="item">За нас</li>
+            <li data-target="our-bungalows-section" class="item">Бунгала</li>
+            <li data-target="our-services-section" class="item">Услуги</li>
+            <li data-target="footer" class="item">Контакти</li>
           </ul>
         </div>
 
@@ -256,7 +257,11 @@
           <h3 class="column-heading">Бунгала</h3>
 
           <ul class="footer-links">
-            <li class="item"><a href="#" class="item-link">Бунгало 1</a></li>
+            <li class="item">
+              <a href="bungalow-1.html" target="_blank" class="item-link"
+                >Бунгало 1</a
+              >
+            </li>
             <li class="item"><a href="#" class="item-link">Бунгало 2</a></li>
             <li class="item"><a href="#" class="item-link">Бунгало 3</a></li>
           </ul>

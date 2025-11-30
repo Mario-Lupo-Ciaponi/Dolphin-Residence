@@ -61,15 +61,12 @@
 
 #footer .quick-links .footer-column .footer-links .item {
   font-size: 0.9rem;
-}
-
-#footer .quick-links .footer-column .footer-links .item-link {
-  text-decoration: none;
   color: var(--gray-color);
   transition: all 400ms ease-in-out;
+  cursor: pointer;
 }
 
-#footer .quick-links .footer-column .footer-links .item-link:hover {
+#footer .quick-links .footer-column .footer-links .item:hover {
   color: var(--dark-gray-color);
 }
 
