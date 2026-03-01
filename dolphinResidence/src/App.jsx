@@ -5,6 +5,7 @@ import "./App.css";
 function App() {
   return (
     <>
+      <title>Dolphin Residence</title>
       <Header />
       <main className="main">
         <AboutUsSection />
