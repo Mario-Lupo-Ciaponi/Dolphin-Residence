@@ -33,7 +33,10 @@ const Navbar = () => {
       <HamburgerMenu showMenu={showHamburgerMenu} />
 
       <button onClick={toggleShowHamburgerMenu} className="menu-button">
-        <FontAwesomeIcon icon={showHamburgerMenu ? faX : faBars} />
+        <FontAwesomeIcon
+          className="icon"
+          icon={showHamburgerMenu ? faX : faBars}
+        />
       </button>
     </nav>
   );

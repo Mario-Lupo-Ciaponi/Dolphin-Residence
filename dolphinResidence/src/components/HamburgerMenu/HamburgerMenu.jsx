@@ -3,7 +3,7 @@ import "./HamburgerMenu.css";
 const HamburgerMenu = ({ showMenu }) => {
   return (
     <div className={`off-screen-menu ${showMenu ? "active" : ""}`}>
-      <ul className="links">
+      <ul className="off-screen-links ">
         <li className="item">Начало</li>
         <li data-target="about-us-section" className="item">
           За нас
