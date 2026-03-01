@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import AboutUsSection from "./components/sections/AboutUsSection/AboutUsSection";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main className="main">
         <AboutUsSection />
       </main>
+      <Footer />
     </>
   );
 }
