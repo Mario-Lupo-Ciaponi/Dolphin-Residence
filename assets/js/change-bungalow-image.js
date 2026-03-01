@@ -7,13 +7,13 @@ const imagesArray = [
 let currentIndex = 0;
 
 const currentImageElement = document.querySelector(
-  ".wrapper .bungalow-images .bungalow-image"
+  ".wrapper .bungalow-images .bungalow-image",
 );
 
 const path = `./assets/images/bungalow-${currentImageElement.id}-images`;
 
 const arrowContainer = document.querySelector(
-  ".wrapper .bungalow-images .arrows"
+  ".wrapper .bungalow-images .arrows",
 );
 
 const leftArrow = arrowContainer.querySelector(".left");
