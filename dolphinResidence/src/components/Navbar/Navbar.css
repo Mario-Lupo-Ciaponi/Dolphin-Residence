@@ -1,0 +1,66 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .logo {
+  flex: 0;
+  width: 5rem;
+}
+
+.navbar .menu-button {
+  z-index: 1000;
+  background: none;
+  border: none;
+}
+
+.navbar .menu-button .icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar .menu-button .close {
+  display: none;
+}
+
+.navbar .links {
+  display: none;
+}
+
+.navbar .item {
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.navbar .item:hover {
+  color: rgba(185, 183, 183, 0.765);
+}
+
+@media screen and (min-width: 880px) {
+  .navbar {
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .navbar .links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .navbar .links .item {
+    list-style: none;
+  }
+
+  .navbar .links .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar .menu-button {
+    display: none;
+  }
+}
