@@ -3,29 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import Logo from "../../assets/logo.png";
+import navLinks from "../../data/navLinks";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
-
-  const navLinks = [
-    {
-      label: "Начало",
-      target: "top",
-    },
-    {
-      label: "За нас",
-      target: "about-us-section",
-    },
-    {
-      label: "Бунгала",
-      target: "our-bungalows-section",
-    },
-    {
-      label: "Контакти",
-      target: "footer",
-    },
-  ];
 
   const scrollToSection = (targetId) => {
     const element = document.getElementById(targetId);
