@@ -1,0 +1,28 @@
+#our-bungalows-section {
+  padding: 3.75rem 1.25rem;
+  background-color: var(--bg-color);
+}
+
+#our-bungalows-section .more-info-p .booking-link {
+  text-decoration: none;
+  color: var(--orange-color);
+}
+
+#our-bungalows-section .bungalows {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  max-width: 1438px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1300px) {
+  #our-bungalows-section {
+    padding: 6.25rem 9.75rem;
+  }
+
+  #our-bungalows-section .bungalows {
+    gap: 3rem;
+    flex-direction: row;
+  }
+}

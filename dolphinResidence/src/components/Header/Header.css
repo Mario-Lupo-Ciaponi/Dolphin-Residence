@@ -1,0 +1,52 @@
+.header {
+  padding: 3.125rem 1.25rem;
+  background-image: url("header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+
+.header #welcoming-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header #welcoming-container .main-part .welcome-to {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.header #welcoming-container .main-part .title-heading {
+  font-size: 2rem;
+}
+
+.header #welcoming-container .secondary-title {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #d9d9d9;
+  font-weight: bolder;
+  letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 880px) {
+  .header {
+    padding: 3.125rem 5rem;
+  }
+
+  .header #welcoming-container .main-part .welcome-to {
+    font-size: 1.125rem;
+  }
+
+  .header #welcoming-container .main-part .title-heading {
+    font-size: 4rem;
+  }
+
+  .header #welcoming-container .secondary-title {
+    font-size: 1rem;
+  }
+}
