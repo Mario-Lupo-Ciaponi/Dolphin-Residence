@@ -1,13 +1,11 @@
-:root {
-  --gray-color: #616161;
-  --bg-color: #eeeeee;
-  --dark-gray-color: #757575;
-  --light-gray: #eeeeee;
-}
-
 #our-bungalows-section {
   padding: 3.75rem 1.25rem;
   background-color: var(--bg-color);
+}
+
+#our-bungalows-section .more-info-p .booking-link {
+  text-decoration: none;
+  color: var(--orange-color);
 }
 
 #our-bungalows-section .bungalows {
