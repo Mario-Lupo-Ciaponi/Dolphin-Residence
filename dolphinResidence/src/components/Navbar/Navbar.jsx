@@ -22,9 +22,6 @@ const Navbar = () => {
         <li data-target="our-bungalows-section" className="item">
           Бунгала
         </li>
-        <li data-target="our-services-section" className="item">
-          Услуги
-        </li>
         <li data-target="footer" className="item">
           Контакти
         </li>
