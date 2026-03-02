@@ -8,6 +8,31 @@ import "./Navbar.css";
 const Navbar = () => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
+  const navLinks = [
+    {
+      label: "Начало",
+      target: "top",
+    },
+    {
+      label: "За нас",
+      target: "about-us-section",
+    },
+    {
+      label: "Бунгала",
+      target: "our-bungalows-section",
+    },
+    {
+      label: "Контакти",
+      target: "footer",
+    },
+  ];
+
+  const scrollToSection = (targetId) => {
+    const element = document.getElementById(targetId);
+
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   const toggleShowHamburgerMenu = () => setShowHamburgerMenu((prev) => !prev);
 
   return (
@@ -15,16 +40,21 @@ const Navbar = () => {
       <img className="logo" src={Logo} alt="logo" />
 
       <ul className="links">
-        <li className="item">Начало</li>
-        <li data-target="about-us-section" className="item">
-          За нас
-        </li>
-        <li data-target="our-bungalows-section" className="item">
-          Бунгала
-        </li>
-        <li data-target="footer" className="item">
-          Контакти
-        </li>
+        {navLinks.map((navLink) => {
+          return (
+            <li
+              key={navLink.target}
+              className="item"
+              onClick={() =>
+                navLink.target === "top"
+                  ? window.scrollTo({ top: 0, behavior: "smooth" })
+                  : scrollToSection(navLink.target)
+              }
+            >
+              {navLink.label}
+            </li>
+          );
+        })}
       </ul>
 
       <HamburgerMenu showMenu={showHamburgerMenu} />
