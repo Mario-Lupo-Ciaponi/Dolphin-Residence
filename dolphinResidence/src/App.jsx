@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import AboutUsSection from "./components/sections/AboutUsSection/AboutUsSection";
+import OurBungalowsSection from "./components/sections/OurBungalowsSection/OurBungalowsSection";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main className="main">
         <AboutUsSection />
+        <OurBungalowsSection />
       </main>
       <Footer />
     </>
