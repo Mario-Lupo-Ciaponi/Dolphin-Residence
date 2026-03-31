@@ -1,6 +1,5 @@
 .header {
   padding: 3.125rem 1.25rem;
-  background-image: url("header-background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

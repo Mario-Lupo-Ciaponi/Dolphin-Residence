@@ -3,7 +3,11 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header" id="home">
+    <header
+      className="header"
+      id="home"
+      style={{ backgroundImage: `url(/header-background.jpg)` }}
+    >
       <Navbar />
 
       <div id="welcoming-container">
