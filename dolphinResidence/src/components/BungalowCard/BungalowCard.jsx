@@ -19,6 +19,10 @@ const BungalowCard = ({
           <p className="price">{pricePerTwo} &euro; / за двама</p>
           <p className="price">{pricePerFive} &euro; / за петима</p>
         </div>
+
+        <p className="pricing-note">
+          Първите двама човека: 30 €/ч. | Всеки следващ: 20 €/ч.
+        </p>
       </div>
     </article>
   );
